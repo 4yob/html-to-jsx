@@ -5,9 +5,9 @@ import styles from './Header.module.css';
 export default function Header({ title, subtitle, totalProducts }) {
     return (
         <div className={styles.header}>
-            <h1>{title}</h1>
-            <h2>{subtitle}</h2>
-            <p>📊 Total de produtos: {totalProducts}</p>
+            <h1 className={styles.montserratTitle}> {title}</h1>
+            <p className={styles.montserratSubtitle}>{subtitle}</p>
+            <p className={styles.montserratText}>📊 Total de produtos: {totalProducts}</p>
         </div>
     )
 }
