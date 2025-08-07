@@ -6,7 +6,6 @@ import ProductCard from "../components/ProductCard/ProductCard";
 import { products } from "../data/products.js";
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from "react-toastify";
-import axios from "axios";
 import Image from "next/image";
 
 export default function Home() {

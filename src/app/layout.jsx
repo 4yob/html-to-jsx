@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import Header from "../components/Header/Header";
+import { products } from "../data/products.js";
 import "./globals.css";
 
 const montserrat = localFont({
@@ -26,7 +27,7 @@ export default function RootLayout({ children }) {
         <Header
           title="🛒 Loja de Eletrônicos"
           subtitle="Os melhores produtos com os melhores preços!"
-          totalProducts={0}
+          totalProducts={`📊 Total de produtos: ${products.length}`}
         />
         {children}
       </body>
